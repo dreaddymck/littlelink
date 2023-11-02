@@ -72,7 +72,7 @@
 				document.getElementById(id).src = "data:image/svg+xml;base64," + btoa(svg);
 			}			
 		}
-		document.addEventListener('DOMContentLoaded', function () {
+		window.addEventListener('load', function () {
 			dmck_linktree_svg_object.forEach((key, index) => { dmck_linktree_img(key.id, key.svg) });
 		}, false);
 	</script>
